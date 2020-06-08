@@ -1,0 +1,67 @@
+<html>
+    <head>
+        <title>Login</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="css/login.css">
+    </head>
+    <body>
+        <div id="mySidenav" class="sidenav">
+            <button class="closebtn btn"  onclick="closeNav()">&times;</button>
+            <a href="login.html">Login</a>
+            <a href="register.html">New User</a>
+        </div>
+        <div class="sticky-top">
+        <nav class="navbar navbar-dark " >
+            <a class="navbar-brand">Menu</a>
+            <button class="navbar-toggler" onclick="openNav()" style="border: none;outline: none;background:transparent;" type="button">
+                <span><img src="images/menu.png" width="30px"></span>
+            </button>
+            </nav>
+        </div>
+        <div class="main">
+            <form class="form">
+            <div class="text-center" >
+                <h2><i>Login</i></h2>
+            </div>
+            <div class="form-group">
+                <img src="images/user.png" class="input_img" />
+                <input type="text" name="username" class="form-fields" placeholder="Username" />
+            </div>
+            <br/>
+            <div class="form-group">
+                <img src="images/password.png" class="input_img" />
+                <input type="password" name="password" class="form-fields" placeholder="Password" />
+            </div><br/>
+
+            <div class="form-group text-center">
+                <input type="submit" value="Login" class="login-btn btn" />
+            </div>
+            <br/>
+            <div class="form-group text-center text-danger">
+               <b> Forgot Password?</b>
+            </div>
+            <br/>
+            <div class="form-group text-center">
+                New User?<b class="text-success">Sign Up</b>
+            </div>
+            </form>
+        </div>
+        <div class="footer fixed-bottom">
+            Designed By 
+        </div>
+        <script>
+            function openNav() {
+              document.getElementById("mySidenav").style.width = "250px";
+            }
+            
+            function closeNav() {
+              document.getElementById("mySidenav").style.width = "0";
+            }
+        </script>
+    </body>
+</html>

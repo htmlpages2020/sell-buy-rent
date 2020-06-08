@@ -1,0 +1,86 @@
+<html>
+    <head>
+        <title>New User Registration</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="css/register.css">
+    </head>
+    <body>
+        <div id="mySidenav" class="sidenav">
+            <button class="closebtn btn"  onclick="closeNav()">&times;</button>
+            <a href="login.html">Login</a>
+            <a href="register.html">New User</a>
+        </div>
+        <div class="sticky-top">
+        <nav class="navbar navbar-dark " >
+            <a class="navbar-brand">Menu</a>
+            <button class="navbar-toggler" onclick="openNav()" style="border: none;outline: none;background:transparent;" type="button">
+                <span><img src="images/menu.png" width="30px"></span>
+            </button>
+            </nav>
+        </div>
+        <div class="main">
+            <form class="form">
+            <div class="text-center" >
+                <h3><i>Sign Up</i></h3>
+            </div>
+            
+            <div class="form-group">
+                <img src="images/name.png" class="input_img" />
+                <input type="text" name="fname" class="form-fields" placeholder="First Name" />
+            </div>
+            <br/>
+            <div class="form-group">
+                <img src="images/name.png" class="input_img" />
+                <input type="text" name="lname" class="form-fields" placeholder="Last Name" />
+            </div>
+            <br/>
+            <div class="form-group">
+                <img src="images/name.png" class="input_img" />
+                <select class="form-fields" name="gender">
+                    <option value="Nil">---SELECT YOUR GENDER---</option>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                </select>
+            </div>
+            <br/>
+            <div class="form-group">
+                <img src="images/email.png" class="input_img" />
+                <input type="email" name="email" class="form-fields" placeholder="Email" />
+            </div><br/>
+            <div class="form-group">
+                <img src="images/password.png" class="input_img" />
+                <input type="password" name="password" class="form-fields" placeholder="Password" />
+            </div><br/>
+            <div class="form-group">
+                <img src="images/mobile.png" class="input_img" />
+                <input type="text" name="mobile_no" class="form-fields" placeholder="Mobile No" />
+            </div><br/>
+            <div class="form-group text-center text-danger">
+               <i> <b>Note:</b>Your username is your Email ID.</i>
+             </div>
+             
+            <div class="form-group text-center">
+                <input type="submit" value="Sign up" class="signup-btn btn" />
+            </div>
+            </form>
+        </div>
+        <div class="footer fixed-bottom">
+            Designed By 
+        </div>
+        <script>
+            function openNav() {
+              document.getElementById("mySidenav").style.width = "250px";
+
+            }
+            
+            function closeNav() {
+              document.getElementById("mySidenav").style.width = "0";
+            }
+        </script>
+    </body>
+</html>
